@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Maker</h1>
+        <div id="quiz-creator">
+            <h2>Create a Quiz</h2>
+            <input type="text" id="quiz-title" placeholder="Quiz Title">
+            <div id="questions-container"></div>
+            <button id="add-question">Add Question</button>
+            <button id="save-quiz">Save Quiz</button>
+        </div>
+        <div id="quiz-list">
+            <h2>Available Quizzes</h2>
+            <ul id="quizzes"></ul>
+        </div>
+        <div id="quiz-taker" style="display: none;">
+            <h2 id="current-quiz-title"></h2>
+            <div id="question-container"></div>
+            <button id="submit-quiz">Submit Quiz</button>
+        </div>
+        <div id="quiz-results" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p id="score"></p>
+            <button id="back-to-list">Back to Quiz List</button>
+        </div>
+        <!-- <button id="delete-all-quizzes">Delete All Quizzes</button> -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
